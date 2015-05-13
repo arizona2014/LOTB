@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1>All books</h1>
+</div>
+
+<div class="row marketing">
+
+  <ul>
+    <li ng-repeat="book in books">
+      <h3>{{book.title}} - {{book.price}}&euro; &nbsp;&nbsp; <button ng-click="addToCart(book);" class="btn btn-xs btn-warning">Add to cart</button></h3>
+    </li>
+  </ul>
+
+</div>

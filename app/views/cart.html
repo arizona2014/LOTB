@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <h1>Books bought</h1>
+</div>
+
+<div class="row marketing">
+
+  <span ng-hide="booksNo" >No books selected !!!</span>
+  <ul ng-show="booksNo">
+    <li ng-repeat="book in books">
+      <h3>{{book.title}} - {{book.price}}&euro;</h3>
+    </li>
+  </ul>
+  <hr />
+  <h3><span style="float:left">Total price: {{totalPrice}}&euro; / Proposed price: {{proposedPrice}}&euro;</span><span style="float:right"><button ng-show="booksNo" ng-click="removeAll();" class="btn btn-xs btn-danger">Empty cart</button></span></h3>
+
+</div>
